@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset=UTF-8 />
+    <meta name='viewport content=width=device-width, initial-scale=1.0' />
+    <link rel=stylesheet href=./src/css/style.css>
+    <script type=module src=./src/js/script.js defer></script>
+    <title>Tarea4 Customizer</title>
+  </head>
+  <body>
+    <main>
+      <div id="leftColumn">
+        <div id="inputTitle">
+          <label for="">Title</label>
+          <input type="text" name="title" id="title" maxlength="10">
+        </div>
+
+        <div id="ranges">
+          <input type="range" name="movement" id="upDown" min="0" max="10" value="0">
+          <input type="range" name="movement" id="leftRight" min="0" max="10" value="0">
+        </div>
+
+        <div id="radioColors">
+          <div class="inputColor">
+            <input type="radio" name="color" id="black"><label for="black" checked>Black</label>
+          </div>
+          <div class="inputColor">
+            <input type="radio" name="color" id="white" checked><label for="white">White</label>
+          </div>
+        </div>
+
+        <div id="narutoImages">
+          <div>
+            <img class="selected" src="./src/images/naruto.png" alt="Naruto">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/sasuke.png" alt="Sasuke">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/Jiraiya.png" alt="Jiraiya">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/tsunade.png" alt="Tsunade">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/itachi.png" alt="Itachi">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/pain.png" alt="Pain">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/shikamaru.png" alt="Shikamaru">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/minato.png" alt="Minato">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/kakashi.png" alt="Kakashi">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/konan.png" alt="Konan">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/obito.png" alt="Obito">
+          </div>
+          <div>
+            <img class="selected" src="./src/images/gaara.png" alt="Gaara">
+          </div>
+        </div>
+      </div>
+      <div id="rightColumn">
+        <div class="imgSite">
+          <img src="./src/images/camisetaBlanca.png" alt="T-shirt" class="shirt">
+        </div>
+        <img src="./src/images/naruto.png" class="mainCharacter" alt="Main character">
+        <img src="./src/images/naruto.png" class="littleCharacter" alt="Little character">
+        <h2 class="characterName">Character</h2>
+        <h4 class="titleName">Title</h4>
+
+        <h3>Custom your T-shirt</h3>
+      </div>
+    </main>
+  </body>
+</html>
+
+
