@@ -5,16 +5,12 @@
 }
 
 :root {
-    --border-color: black;
-    --dotted-border-color: gray;
-    --padding: 16px;
+    --black: black;
     --border-radius: 8px;
     --input-font-size: 1rem;
-    --small-font-size: 0.9rem;
     --large-height: 80%;
     --medium-height: 10%;
     --small-height: 15%;
-    --tiny-height: 5%;
     --image-width: 100%;
 }
 
@@ -30,11 +26,11 @@ body {
 }
 
 main {
-    width: 80%;
+    width: var(--large-height);
     height: var(--large-height);
     background: rgb(252, 240, 151);
-    border: 1px solid var(--border-color);
-    padding: var(--padding);
+    border: 1px solid var(--black);
+    padding: 16px;
     border-radius: var(--border-radius);
     display: flex;
     align-items: center;
@@ -46,7 +42,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px dotted var(--dotted-border-color);
+    border: 4px dotted gray;
 }
 
 #inputTitle {
@@ -59,7 +55,7 @@ main {
 
 #inputTitle > input {
     border: none;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--black);
     font-size: var(--input-font-size);
 }
 
@@ -101,7 +97,7 @@ main {
 
 #narutoImages > div {
     height: 50%;
-    border: 3px double var(--border-color);
+    border: 3px double var(--black);
     width: 49%;
     display: flex;
     justify-content: center;
@@ -220,7 +216,7 @@ h3 {
     #ranges > input[type="range"],
     #narutoImages {
         width: var(--image-width);
-        border-bottom: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--black);
     }
 
     #narutoImages {
@@ -237,7 +233,7 @@ h3 {
     }
 
     .littleCharacter {
-        height: var(--tiny-height);
+        height: 5%;
         top: 56%;
         left: 55%;
     }
@@ -248,11 +244,11 @@ h3 {
     }
 
     .characterName {
-        top: 80%;
+        top: var(--large-height);
     }
 
     .characterName{
-        font-size: var(--small-font-size);
+        font-size: 0.9rem;
     }
 
     .titleName{
